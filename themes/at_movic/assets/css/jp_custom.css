@@ -1,0 +1,58 @@
+body#cart .cart-overview.js-cart {
+  padding: 0px !important;
+}
+body#cart .block-promo .promo-code-button .collapse-button {
+  padding: 0px 0px !important;
+}
+body#cart div.cart-summary-line#cart-subtotal-shipping {
+  height: 50px;
+}
+body#cart .js-cart-summary-top h5.aeuc_scart {
+  margin-top: 0px;
+}
+body#cart h5.aeuc_scart {
+  letter-spacing: 0px !important;
+}
+body#cart hr.separator {
+  display: none;
+}
+body#cart #footer {
+  display: none;
+}
+body#cart #header {
+  border-bottom: 2px solid #CFCFCF;
+  margin-bottom: 40px !important;
+}
+body#cart .h-logo {
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+  max-width: 200px;
+}
+body#cart .leo-fly-cart {
+  display: none;
+}
+body#cart .cart-detailed-totals > .card-block {
+  border-bottom: 0px !important;
+}
+body#cart .reassurance_product > div span.item-product {
+  left: 0px !important;
+}
+
+@media screen and (max-width: 575px) {
+  body#cart .btn.btn-primary.float-xs-left.btn-outline {
+    width: 100%;
+  }
+  body#cart .checkout.cart-detailed-actions.card-block .btn {
+    background: #EA9828;
+    width: 100%;
+  }
+  body#cart .promo-code .btn {
+    margin-left: 0px !important;
+    width: 100%;
+    margin-top: 20px;
+  }
+  body#cart .block-promo .promo-input {
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+}/*# sourceMappingURL=jp_custom.css.map */

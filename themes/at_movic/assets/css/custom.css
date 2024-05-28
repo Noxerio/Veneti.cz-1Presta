@@ -1,0 +1,7 @@
+@import "jp_custom.css";
+.box-htop3 .leo-megamenu .navbar-nav::before{ border-top: 0 !important; border-bottom: 0 !important;}
+
+@media (min-width:992px)
+{  .box-htop3 .leo-megamenu .navbar-nav:before {border-top: 0 !important; border-bottom: 0 !important;}
+   .border-bottom {border-bottom: 1px solid lightgray; height:1px;} 
+}

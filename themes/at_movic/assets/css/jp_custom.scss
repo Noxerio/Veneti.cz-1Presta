@@ -1,0 +1,61 @@
+body#cart{
+    .cart-overview.js-cart{
+        padding: 0px !important;
+    }
+    .block-promo .promo-code-button .collapse-button{
+        padding: 0px 0px !important;
+    }
+    div.cart-summary-line#cart-subtotal-shipping{
+        height: 50px;
+    }
+    .js-cart-summary-top h5.aeuc_scart {
+        margin-top: 0px;
+    }
+    h5.aeuc_scart {
+        letter-spacing: 0px !important;
+    }
+    hr.separator{
+        display: none;
+    }
+    #footer{
+        display: none;
+    }
+    #header{
+        border-bottom: 2px solid #CFCFCF;
+        margin-bottom: 40px !important;
+    }
+    .h-logo {
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+        max-width: 200px;
+    }
+    .leo-fly-cart{
+        display: none;
+    }
+    .cart-detailed-totals > .card-block {
+        border-bottom: 0px !important;
+    }
+    .reassurance_product > div span.item-product {
+        left: 0px !important;
+    }
+}
+@media screen and (max-width: 575px) {
+    body#cart{
+        .btn.btn-primary.float-xs-left.btn-outline{
+            width: 100%;
+        }
+        .checkout.cart-detailed-actions.card-block .btn {
+            background: #EA9828;
+            width: 100%;
+        }
+        .promo-code .btn {
+            margin-left: 0px !important;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .block-promo .promo-input {
+            width: 100% !important;
+            min-width: 100% !important;
+        }
+    }
+}
