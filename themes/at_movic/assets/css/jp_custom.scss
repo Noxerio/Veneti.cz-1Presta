@@ -1,4 +1,4 @@
-body#cart{
+body#cart, body#checkout{
     .cart-overview.js-cart{
         padding: 0px !important;
     }
@@ -40,7 +40,7 @@ body#cart{
     }
 }
 @media screen and (max-width: 575px) {
-    body#cart{
+    body#cart, body#checkout{
         .btn.btn-primary.float-xs-left.btn-outline{
             width: 100%;
         }

@@ -1,57 +1,57 @@
-body#cart .cart-overview.js-cart {
+body#cart .cart-overview.js-cart, body#checkout .cart-overview.js-cart {
   padding: 0px !important;
 }
-body#cart .block-promo .promo-code-button .collapse-button {
+body#cart .block-promo .promo-code-button .collapse-button, body#checkout .block-promo .promo-code-button .collapse-button {
   padding: 0px 0px !important;
 }
-body#cart div.cart-summary-line#cart-subtotal-shipping {
+body#cart div.cart-summary-line#cart-subtotal-shipping, body#checkout div.cart-summary-line#cart-subtotal-shipping {
   height: 50px;
 }
-body#cart .js-cart-summary-top h5.aeuc_scart {
+body#cart .js-cart-summary-top h5.aeuc_scart, body#checkout .js-cart-summary-top h5.aeuc_scart {
   margin-top: 0px;
 }
-body#cart h5.aeuc_scart {
+body#cart h5.aeuc_scart, body#checkout h5.aeuc_scart {
   letter-spacing: 0px !important;
 }
-body#cart hr.separator {
+body#cart hr.separator, body#checkout hr.separator {
   display: none;
 }
-body#cart #footer {
+body#cart #footer, body#checkout #footer {
   display: none;
 }
-body#cart #header {
+body#cart #header, body#checkout #header {
   border-bottom: 2px solid #CFCFCF;
   margin-bottom: 40px !important;
 }
-body#cart .h-logo {
+body#cart .h-logo, body#checkout .h-logo {
   margin-top: 5px !important;
   margin-bottom: 5px !important;
   max-width: 200px;
 }
-body#cart .leo-fly-cart {
+body#cart .leo-fly-cart, body#checkout .leo-fly-cart {
   display: none;
 }
-body#cart .cart-detailed-totals > .card-block {
+body#cart .cart-detailed-totals > .card-block, body#checkout .cart-detailed-totals > .card-block {
   border-bottom: 0px !important;
 }
-body#cart .reassurance_product > div span.item-product {
+body#cart .reassurance_product > div span.item-product, body#checkout .reassurance_product > div span.item-product {
   left: 0px !important;
 }
 
 @media screen and (max-width: 575px) {
-  body#cart .btn.btn-primary.float-xs-left.btn-outline {
+  body#cart .btn.btn-primary.float-xs-left.btn-outline, body#checkout .btn.btn-primary.float-xs-left.btn-outline {
     width: 100%;
   }
-  body#cart .checkout.cart-detailed-actions.card-block .btn {
+  body#cart .checkout.cart-detailed-actions.card-block .btn, body#checkout .checkout.cart-detailed-actions.card-block .btn {
     background: #EA9828;
     width: 100%;
   }
-  body#cart .promo-code .btn {
+  body#cart .promo-code .btn, body#checkout .promo-code .btn {
     margin-left: 0px !important;
     width: 100%;
     margin-top: 20px;
   }
-  body#cart .block-promo .promo-input {
+  body#cart .block-promo .promo-input, body#checkout .block-promo .promo-input {
     width: 100% !important;
     min-width: 100% !important;
   }
