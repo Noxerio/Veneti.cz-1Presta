@@ -1,0 +1,63 @@
+.jp_numberInput {
+  border: 1px solid #ddd;
+  display: inline-flex;
+  border-radius: 5px;
+}
+.jp_numberInput input[type=number] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+.jp_numberInput input[type=number]::-webkit-inner-spin-button,
+.jp_numberInput input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.jp_numberInput,
+.jp_numberInput * {
+  box-sizing: border-box;
+}
+
+.jp_numberInput button {
+  outline: none;
+  -webkit-appearance: none;
+  background-color: #f7f7f7;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  width: 1.6rem;
+  height: 2rem;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+}
+
+.jp_numberInput button:after {
+  display: inline-block;
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: "-";
+  transform: translate(-50%, -50%) rotate(180deg);
+  opacity: 0.6;
+}
+
+.jp_numberInput button.plus:after {
+  transform: translate(-50%, -50%) rotate(0deg);
+  content: "+";
+  font-weight: 600;
+  font-family: "Font Awesome 5 Free";
+  opacity: 0.6;
+}
+
+.jp_numberInput input[type=number] {
+  font-family: sans-serif;
+  max-width: 2.2rem;
+  padding: 0.2rem;
+  border: solid #ddd;
+  border-width: 0 1px;
+  font-size: rem;
+  height: 2rem;
+  font-weight: bold;
+  text-align: center;
+}/*# sourceMappingURL=jp_numberInput.css.map */
