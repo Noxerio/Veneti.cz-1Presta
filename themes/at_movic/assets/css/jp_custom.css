@@ -1,5 +1,12 @@
+body#cart .field-firstname .form-control-comment, body#cart .field-lastname .form-control-comment, body#checkout .field-firstname .form-control-comment, body#checkout .field-lastname .form-control-comment {
+  display: none !important;
+}
+body#cart .form-control-comment, body#checkout .form-control-comment {
+  padding-left: 0 !important;
+  display: block;
+}
 body#cart .cart-overview.js-cart, body#checkout .cart-overview.js-cart {
-  padding: 0px !important;
+  padding: 0 !important;
 }
 body#cart .block-promo .promo-code-button .collapse-button, body#checkout .block-promo .promo-code-button .collapse-button {
   padding: 0px 0px !important;
@@ -36,6 +43,28 @@ body#cart .cart-detailed-totals > .card-block, body#checkout .cart-detailed-tota
 }
 body#cart .reassurance_product > div span.item-product, body#checkout .reassurance_product > div span.item-product {
   left: 0px !important;
+}
+
+body#checkout #order-summary-content .col-md-12 > h4.black {
+  font-size: 20px !important;
+  color: #333 !important;
+  background-color: transparent !important;
+  padding: 15px 0px 35px 0px !important;
+  border-bottom: 1px solid #e1e1e1 !important;
+  margin: 0 !important;
+  text-transform: none !important;
+}
+
+body#checkout #order-summary-content h4.h4 {
+  padding: 25px 0px 0px 0px !important;
+}
+
+#order-summary-content .card-block {
+  padding: 0px;
+}
+
+body#checkout #order-summary-content .order-confirmation-table {
+  padding: 0px !important;
 }
 
 @media screen and (max-width: 575px) {

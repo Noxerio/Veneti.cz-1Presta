@@ -1,6 +1,15 @@
 body#cart, body#checkout{
+    .field-firstname, .field-lastname {
+        .form-control-comment{
+            display:none !important;
+        }
+    }
+    .form-control-comment{
+        padding-left:0!important;
+        display:block;
+    }
     .cart-overview.js-cart{
-        padding: 0px !important;
+        padding: 0 !important;
     }
     .block-promo .promo-code-button .collapse-button{
         padding: 0px 0px !important;
@@ -39,6 +48,29 @@ body#cart, body#checkout{
         left: 0px !important;
     }
 }
+
+body#checkout #order-summary-content .col-md-12 > h4.black {
+    font-size: 20px!important;
+    color: #333!important;
+    background-color: transparent!important;
+    padding: 15px 0px 35px 0px!important;
+    border-bottom: 1px solid #e1e1e1!important;
+    margin: 0!important;
+    text-transform: none!important;
+}
+body#checkout #order-summary-content h4.h4 {
+    padding: 25px 0px 0px 0px !important;
+}
+#order-summary-content{
+    .card-block {
+        padding: 0px;
+    }
+}
+body#checkout #order-summary-content .order-confirmation-table {
+    padding: 0px!important;
+}
+
+
 @media screen and (max-width: 575px) {
     body#cart, body#checkout{
         .btn.btn-primary.float-xs-left.btn-outline{
