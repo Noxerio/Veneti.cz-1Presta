@@ -1,3 +1,112 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+body#cart .form-control-comment, body#checkout .form-control-comment {
+  padding-left: 0 !important;
+  display: block;
+  color: #888 !important;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+}
+
+body#checkout section.checkout-step #customer-form .form-control-label, body#checkout section.checkout-step #delivery-address .form-control-label, body#checkout section.checkout-step #invoice-address .form-control-label, body#checkout section.checkout-step #login-form .form-control-label {
+  text-align: left;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+body#checkout section.checkout-step #customer-form .radio-inline {
+  margin: 0 !important;
+}
+
+#checkout #checkout-personal-information-step .tab-content .form-control:focus {
+  outline: 0;
+  border-color: #4caf50 !important;
+}
+
+#checkout #checkout-personal-information-step .nav .nav-item {
+  width: 50%;
+  float: left;
+  margin: 0;
+  border-right: 1px solid #e1e1e1;
+  border-left: 1px solid #e1e1e1;
+}
+
+#checkout #checkout-personal-information-step .nav .nav-item:last-child {
+  border-right: 1px solid #e1e1e1 !important;
+}
+
+#checkout #checkout-personal-information-step .nav .nav-item .nav-link {
+  display: block;
+  line-height: 35px;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #e1e1e1;
+  color: #888888 !important;
+  font-weight: 500;
+  background-color: #F8F8F8;
+  font-size: 16px;
+  border-top: 1px solid #e1e1e1;
+  min-height: 59px;
+}
+
+#checkout #checkout-personal-information-step .nav .nav-item .nav-link.active {
+  color: #282828 !important;
+}
+
+@media (min-width: 1200px) {
+  body#cart .container, body#checkout .container {
+    width: 1600px;
+    max-width: 100%;
+  }
+}
+body#cart .product-line-grid .product-price strong, body#checkout .product-line-grid .product-price strong {
+  font-weight: 600 !important;
+  color: #000 !important;
+}
+body#cart .has-discount .discount, body#checkout .has-discount .discount {
+  background: #f85c3d;
+  color: white;
+  font-weight: 500;
+  padding: 1px 8px;
+  font-size: 11px;
+  margin: 0 5px 0 0;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: 5px;
+  border-radius: 5px;
+}
+body#cart h2.h4, body#checkout h2.h4 {
+  border-top: 1px solid #e1e1e1;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  padding-top: 50px;
+}
+body#cart .field-id_gender, body#checkout .field-id_gender {
+  margin-bottom: 40px !important;
+}
+body#cart .form-group, body#checkout .form-group {
+  margin-bottom: 30px !important;
+}
+body#cart .div.kreassurance_product .block-title, body#cart div.reassurance_product p.block-title, body#checkout .div.kreassurance_product .block-title, body#checkout div.reassurance_product p.block-title {
+  font-size: 14px !important;
+  color: #444 !important;
+  line-height: 22px !important;
+}
+body#cart .jp_delivery i.fa-trash-can, body#checkout .jp_delivery i.fa-trash-can {
+  background: white !important;
+  color: white !important;
+}
+body#cart #js-checkout-summary, body#cart section.js-current-step, body#checkout #js-checkout-summary, body#checkout section.js-current-step {
+  box-shadow: none !important;
+}
+body#cart #js-checkout-summary .aeuc_scart, body#cart section.js-current-step .aeuc_scart, body#checkout #js-checkout-summary .aeuc_scart, body#checkout section.js-current-step .aeuc_scart {
+  color: black !important;
+}
+body#cart #js-checkout-summary #cart-summary-product-list, body#cart section.js-current-step #cart-summary-product-list, body#checkout #js-checkout-summary #cart-summary-product-list, body#checkout section.js-current-step #cart-summary-product-list {
+  color: black !important;
+}
+body#cart #js-checkout-summary #cart-summary-product-list .product-price, body#cart section.js-current-step #cart-summary-product-list .product-price, body#checkout #js-checkout-summary #cart-summary-product-list .product-price, body#checkout section.js-current-step #cart-summary-product-list .product-price {
+  font-weight: 400 !important;
+}
 body#cart .field-firstname .form-control-comment, body#cart .field-lastname .form-control-comment, body#checkout .field-firstname .form-control-comment, body#checkout .field-lastname .form-control-comment {
   display: none !important;
 }
@@ -27,7 +136,7 @@ body#cart #footer, body#checkout #footer {
   display: none;
 }
 body#cart #header, body#checkout #header {
-  border-bottom: 2px solid #CFCFCF;
+  border-bottom: 1px solid #CFCFCF;
   margin-bottom: 40px !important;
 }
 body#cart .h-logo, body#checkout .h-logo {
@@ -67,6 +176,66 @@ body#checkout #order-summary-content .order-confirmation-table {
   padding: 0px !important;
 }
 
+.jp_summary .jp_delivery .jp_delivery_preview .jp_delivery_preview_inner .jp_delivery_preview_row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr !important;
+}
+
+.jp_summary .jp_delivery {
+  border-top: 1px dotted lightgray;
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-top: 20px !important;
+  padding-top: 30px;
+  font-style: italic;
+  color: gray;
+}
+
+body#checkout section.checkout-step .payment-options .payment-option {
+  width: 100%;
+}
+
+#jporder_ares {
+  background: #3198a4;
+  text-align: center;
+  padding: 8px 15px;
+  border-radius: 3px;
+  color: white;
+  margin-top: 20px;
+  display: inline-block;
+  font-size: 12px;
+}
+
+#jporder_ares:hover {
+  opacity: 0.8;
+}
+
+.password-container {
+  display: block !important;
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 5px;
+}
+.password-container #password-info {
+  margin-bottom: 10px;
+}
+.password-container .form-control-label {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#cart .product-line-grid-right .bootstrap-touchspin {
+  box-shadow: none !important;
+}
+#cart .input-group button {
+  background: #f7f7f7 !important;
+  color: gray !important;
+  border: 1px solid lightgray !important;
+}
+#cart .input-group input {
+  text-align: center;
+}
+
 @media screen and (max-width: 575px) {
   body#cart .btn.btn-primary.float-xs-left.btn-outline, body#checkout .btn.btn-primary.float-xs-left.btn-outline {
     width: 100%;
@@ -84,4 +253,51 @@ body#checkout #order-summary-content .order-confirmation-table {
     width: 100% !important;
     min-width: 100% !important;
   }
+  body#cart #checkout #checkout-personal-information-step .tab-content, body#checkout #checkout #checkout-personal-information-step .tab-content {
+    padding: 0, i !important;
+  }
+  body#cart #checkout #checkout-personal-information-step ul.nav-inline .nav-link:first-child .nav-link, body#checkout #checkout #checkout-personal-information-step ul.nav-inline .nav-link:first-child .nav-link {
+    line-height: 0px !important;
+    padding: 2px 5px;
+    font-size: 14px;
+  }
+  #checkout #checkout-personal-information-step ul.nav-inline li.nav-item:first-child .nav-link {
+    line-height: 23px !important;
+    padding: 2px 5px;
+    font-size: 15px;
+  }
+  #checkout #checkout-personal-information-step .tab-content {
+    padding: 20px 0px !important;
+  }
+  #checkout #checkout-personal-information-step .tab-content .form-control-comment {
+    margin-left: 10px;
+  }
+  body#checkout section.checkout-step .btn-primary {
+    width: 100%;
+  }
+  body#checkout section.checkout-step .content {
+    padding: 20px 0px !important;
+  }
+  .jp_deliveryOptions .jp_deliveryOption .jp_deliveryOption_top {
+    margin-bottom: 20px;
+  }
+  .jp_deliveryOptions .jp_deliveryOption .jp_deliveryOption_top .jp_deliveryOption_body {
+    justify-content: center !important;
+  }
+  .jp_delivery .jp_delivery_wrapper .jp_delivery_row {
+    grid-template-columns: 1fr !important;
+  }
+  #jp_bringdown_trash img {
+    max-height: 20px;
+  }
+  .jp_delivery .jp_delivery_preview .jp_delivery_preview_inner .jp_delivery_preview_row {
+    display: flex !important;
+    flex-direction: column;
+    align-items: start;
+  }
+}
+body#checkout #order-summary-content {
+  box-shadow: none !important;
+  border: none !important;
+  margin-top: 30px;
 }/*# sourceMappingURL=jp_custom.css.map */
