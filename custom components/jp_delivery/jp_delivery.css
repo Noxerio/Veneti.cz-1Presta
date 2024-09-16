@@ -1,3 +1,6 @@
+.jp_delivery {
+  margin-left: 95px;
+}
 .jp_delivery hr {
   margin-block: 25px;
   opacity: 0.2;
@@ -67,4 +70,15 @@
   text-decoration: underline;
   color: #cdcdcd;
   cursor: pointer;
+}
+
+@media screen and (max-width: 575px) {
+  .jp_delivery {
+    margin-left: 0px;
+  }
+}
+#bringdown_content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }/*# sourceMappingURL=jp_delivery.css.map */

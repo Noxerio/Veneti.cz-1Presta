@@ -1,3 +1,15 @@
+body#checkout #order-summary-content h4.h4 {
+  color: black !important;
+  font-size: 23px !important;
+  text-transform: none !important;
+  margin-bottom: 30px !important;
+}
+
+.jp_order_edit {
+  font-size: 13px;
+  color: #8c8c8c;
+}
+
 .jp_summary {
   width: 100%;
 }
@@ -9,7 +21,9 @@
 .jp_summary .jp_summary_delivery h4 {
   margin-bottom: 18px !important;
   margin-top: 0px !important;
-  font-size: 20px;
+  font-size: 23px;
+  display: flex;
+  gap: 1rem;
 }
 .jp_summary .jp_summary_delivery .jp_delivery_summary_option {
   display: flex;
@@ -34,8 +48,14 @@
 }
 .jp_summary_top h4 {
   text-transform: none !important;
-  font-weight: 500;
+  font-weight: 600;
+  color: black !important;
   font-size: 16px !important;
+  padding-bottom: 6px;
+}
+.jp_summary_top .card-block p {
+  color: black;
+  font-size: 15px;
 }
 .jp_summary_top .card-block br {
   margin: 6px 0px;
@@ -64,5 +84,5 @@
 }
 .jp_summary_total .jp_summary_total_second table tr.total td.price {
   font-weight: 500;
-  font-size: 23px;
+  font-size: 26px;
 }/*# sourceMappingURL=jp_summary.css.map */

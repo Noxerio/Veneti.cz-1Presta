@@ -18,6 +18,14 @@
   max-width: 1000px;
   text-align: center;
 }
+.confirm .confirm_header .inner span {
+  font-weight: 500;
+}
+.confirm .confirm_header .inner span.email {
+  font-weight: 500;
+  color: #5dc1cd;
+  text-decoration: underline;
+}
 .confirm .confirm_header .inner h2 {
   font-size: 35px;
 }
@@ -56,9 +64,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
   gap: 0px 0px;
-  grid-template-areas: ". .";
 }
 
 .confirm_products .inner {
@@ -90,13 +96,24 @@
 .confirm_products .inner .confirm_products_list .confirm_product p.name span {
   color: gray;
 }
-.confirm_products .inner .confirm_products_list .confirm_product p.share {
-  color: #265ca2;
+.confirm_products .inner .confirm_products_list .confirm_product .jp_fbshare {
+  color: #275c9f;
+  font-weight: 500;
+}
+.confirm_products .inner .confirm_products_list .confirm_product .share {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.confirm_products .inner .confirm_products_list .confirm_product .share img {
+  width: 15px !important;
+  height: 15px !important;
 }
 
 .confirm_socials {
   width: 100%;
   margin-top: 70px;
+  margin-bottom: 70px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -115,7 +132,24 @@
 .confirm_socials .inner .confirm_socials_box a {
   text-decoration: none;
   color: black;
+  font-weight: 500;
 }
 .confirm_socials .inner .confirm_socials_box a p {
   padding-top: 10px;
+  color: black;
+}
+
+@media screen and (max-width: 776px) {
+  .confirm_info .container .confirm_body .confirm_row .confirm_main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0px 0px;
+  }
+  .confirm_products .inner .confirm_products_list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 }/*# sourceMappingURL=confirm.css.map */

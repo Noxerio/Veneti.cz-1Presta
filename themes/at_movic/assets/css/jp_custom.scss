@@ -1,12 +1,73 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+.custom-checkbox input[type="checkbox"] + span, .custom-checkbox input[type="radio"] + span {
+    margin-right: 0px !important; 
+  }
+  body#checkout section.checkout-step .payment-options .custom-radio {
+    margin:0 !important;
+  }
+  body#checkout .custom-checkbox{
+    color:green !important;
+  }
+.btn-jp-custom {
+    padding: 15px 35px !important;
+    font-size: 16px !important;
+    background-color: #cccccc !important;
+    color: black !important;
+    border: 1px solid #cccccc !important;
+    &:hover{
+        background-color: white !important; 
+        border:1px solid black;
+      }
+  }
+  #js-checkout-summary .cart-summary-subtotals-container {
+    border-top: 0px !important;
+}
+div#csoc-container {
+    padding-top: 0px !important;
+}
+.cart-container .cart-item {
+    padding: 30px 5px !important;
+    border-bottom: 1px solid #e1e1e1;
+}
+.cart-grid .cart-grid-body .card-block {
+    padding: 0 0 30px 0 !important;
+}
+.cart-grid-body .card-block h1 {
+    font-size: 2em !important;
+}
+.jporder-checkout section.checkout-step .step-title {
+    margin-top: 0 !important;
+}
+.jporder-checkout {
+    min-height: 60px !important;
+}
+#blockcart-modal .cart-content a.btn, .product-add-to-cart .product-quantity .add-to-cart, .leo-cart-dropdown-action a.btn.cart-dropdow-checkout, .continue.btn, button.btn.btn-primary.center-block, .checkout.cart-detailed-actions.card-block .btn {
+    background: #f29a02 !important;
+    background-image: url("/themes/at_movic/assets/img/bg-btn.png") !important;
+    background-position: top center !important;
+    background-repeat: no-repeat !important;
+    background-position-x: 100% !important;
+    &:hover{
+        background:#d78800 !important;
+    }
+
+}
+body#checkout section.checkout-step #customer-form .input-group-btn .btn[data-action="show-password"]{
+    position: relative !important;
+    left:-50px !important;
+}
+body#checkout section.checkout-step #login-form .input-group-btn .btn[data-action="show-password"]{
+    position: relative !important;
+    left: -50px !important;
+  }
 body#cart .form-control-comment, body#checkout .form-control-comment {
     padding-left: 0 !important;
     display: block;
     color: #888 !important;
     font-weight: 400 !important;
-    font-size: 15px !important;
+    font-size: 13px !important;
 }
-body#checkout section.checkout-step #customer-form .form-control-label, body#checkout section.checkout-step #delivery-address .form-control-label, body#checkout section.checkout-step #invoice-address .form-control-label, body#checkout section.checkout-step #login-form .form-control-label {
+body#checkout .form-control-label, body#checkout #delivery-address .form-control-label, body#checkout #invoice-address .form-control-label, body#checkout #login-form .form-control-label {
     text-align: left;
     font-size: 15px;
     font-weight: 400;
@@ -44,7 +105,199 @@ body#checkout section.checkout-step #customer-form .radio-inline {
 #checkout #checkout-personal-information-step .nav .nav-item .nav-link.active {
     color: #282828 !important;
 }
-body#cart, body#checkout{
+body#cart .delivery-options-list, body#checkout .delivery-options-list {
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 3px;
+    margin-bottom: 40px;
+  }
+  #js-checkout-summary .cart-summary-products {
+    padding: 15px 15px 0px 15px !important;
+    border-bottom: 1px solid #e1e1e1;
+}
+body#cart, body#checkout {
+    .jp_deliveryOptions .jp_deliveryOption .jp_deliveryOption_info {
+        margin-left: 98px !important;
+        color: #888;
+    }
+    #jp_bringdown_submit {
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        padding: 8px 60px;
+        background: #292929;
+        font-size: 14px;
+        border-radius: 3px;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 600;
+        border: 0px !important;
+        &:hover{
+            background: #666666;
+        }
+    }
+    #jp_bringdown_submit.disabled {
+        background-color: #cccccc;
+    }
+    .jp_delivery hr {
+        margin-block: 25px;
+        opacity: 0.2;
+        border: 1px dotted #aaa;
+    }
+    .jp_order_edit {
+        font-size: 13px;
+        color: gray;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-weight: 400;
+        margin-left: 20px;
+        img{
+            width: 15px;
+            height: 15px;
+        }
+    }
+    #id_summary_message{
+        padding: 10px;
+        background: #f6f6f6;
+        border: 1px solid lightgray;
+        border-top: 0px;
+        strong{
+            font-weight: 500 !important;
+            color: black;
+        }
+    }
+    .companyPurchase-checkbox-row{
+        margin-left:1px;
+        label{
+            font-weight: 400 !important;
+        }
+    }
+    #jpfooter{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f5f5f5;
+        height: 80px;
+        width: 100%;
+        .inner{
+            padding: 20px;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            i{
+                font-size: 45px;
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+                .phone{
+                    font-weight: 500;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .js-terms{
+        color:black !important;
+    }
+    .js-customer-form label.radio-inline {
+        padding: 10px 20px 0 0 !important;
+        font-weight: 400 !important;
+    }
+    .tab-content{
+        padding: 0 !important;
+        padding-top:40px !important;
+    }
+    .password-container{
+        margin-left: 1px;
+        strong{
+            font-weight: 400 !important;
+        }
+    }
+    .field-newsletter{
+        margin-bottom: 0px !important;
+    }
+    .field-newsletter label, .field-customer_privacy label{
+        font-weight: 400 !important;
+    }
+    .form-control{
+        font-size: 14px;
+    }
+    .cart-grid-right{
+        padding-left:60px;
+    }
+    .cart-footer-buttons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap:1rem;
+        .btn-jp-primary{
+            background-color: #f79f03 !important;
+            background-image: url("/themes/at_movic/assets/img/bg-btn.png");
+            font-size: 15px;
+            padding-inline: 35px;
+            padding-block: 15px;
+            border: 1px solid #f79f03;
+            
+            &:hover{
+                background-color: #d78800 !important;
+                border:1px solid #d78800;
+            }
+        }
+        .btn-jp-secondary{
+            background: #cccccc !important;
+            border: 1px solid #cccccc;
+            font-size: 15px;
+            color: black;
+            padding-inline: 35px;
+            padding-block: 15px;
+            &:hover{
+                background: white !important;
+            }
+        }
+    }
+    .jp_delivery .jp_delivery_preview .jp_delivery_preview_inner .jp_delivery_preview_row p:first-child {
+        font-weight: 400 !important;
+    }
+    .jp_delivery_preview_remove img {
+        width: 20px !important;
+        height: auto;
+        position: relative;
+        top: 0px !important;
+    }
+    .jp_delivery_preview_row{
+        p{
+            margin-bottom: 0!important;
+            font-style: italic;
+            color: black;
+        }
+    }
+    .jp_select_wrapper {
+        max-width: 100% !important;
+    }
+    .jp_delivery_row{
+        grid-template-columns: 1fr;
+    }
+    .jp_delivery{
+        margin-left:95px;
+    }
+    label[for="delivery_message"]{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    #deliveryMessage{
+        margin-top: 60px !important;
+    }
+    .payment-options .jp_deliveryOptions  {
+        margin-bottom: -10px;
+        border-bottom: 1px solid #e1e1e1;
+    }
+    form#js-delivery{
+        .form-fields{
+            margin-bottom: -85px;
+        }
+    }
+    
     @media (min-width: 1200px) {
         .container {
             width: 1600px;
@@ -137,7 +390,7 @@ body#cart, body#checkout{
     }
     #header{
         border-bottom: 1px solid #CFCFCF;
-        margin-bottom: 40px !important;
+        margin-bottom: 60px !important;
     }
     .h-logo {
         margin-top: 5px !important;
@@ -218,6 +471,13 @@ body#checkout section.checkout-step .payment-options .payment-option {
     }
 }
 #cart{
+    .input-group-btn:not(:first-child) > .btn, .input-group-btn:not(:first-child) > .btn-group {
+        z-index: 2;
+        margin-left: 0px !important;
+    }
+    .input-group-btn:not(:last-child) > .btn, .input-group-btn:not(:last-child) > .btn-group {
+        margin-right: 0px !important;
+    }
     .product-line-grid-right .bootstrap-touchspin{
         box-shadow: none!important;
     }
@@ -227,14 +487,31 @@ body#checkout section.checkout-step .payment-options .payment-option {
             background:#f7f7f7 !important;
             color: gray!important;
             border: 1px solid lightgray !important;
+            font-size: 16px;
         }
         input{
             text-align: center;
+            border-block: 1px solid lightgray;
+            border-inline: 0;
         }
     }
 }
 @media screen and (max-width: 575px) {
     body#cart, body#checkout{
+        .cart-grid-right{
+            padding-left:10px;
+        }
+        .cart-footer-buttons{
+            flex-direction: column-reverse;
+        }
+        .jp_select.bringdown_type{
+            .select-options{
+                width: auto;
+            }
+        }
+        .jp_delivery{
+            margin-left:0px;
+        }
         .btn.btn-primary.float-xs-left.btn-outline{
             width: 100%;
         }

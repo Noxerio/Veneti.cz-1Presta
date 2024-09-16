@@ -13,6 +13,14 @@
         margin-left: calc(-50vw + 50%); 
         padding: 10px;
         .inner{
+            span{
+                font-weight: 500;
+            }
+            span.email{
+                font-weight: 500;
+                color: #5dc1cd;
+                text-decoration: underline;
+            }
             margin-top: 250px;
             max-width: 1000px;
             text-align: center;
@@ -53,10 +61,7 @@
                     width: 100%;
                     display: grid; 
                     grid-template-columns: 1fr 1fr; 
-                    grid-template-rows: 1fr; 
                     gap: 0px 0px; 
-                    grid-template-areas: 
-                      ". ."; 
                 }
             }
         }
@@ -90,8 +95,18 @@
                 p.name span{
                     color: gray;
                 }
-                p.share{
-                    color: #265ca2;
+                .jp_fbshare{
+                    color:#275c9f;
+                    font-weight: 500;
+                }
+                .share{
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    img{
+                        width: 15px !important;
+                        height: 15px !important;
+                    }
                 }
             }
         }
@@ -101,6 +116,7 @@
 .confirm_socials{
     width: 100%;
     margin-top: 70px;
+    margin-bottom: 70px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -117,8 +133,37 @@
         .confirm_socials_box{
             a{
                 text-decoration: none;
-                color: black;
-                p{padding-top:10px}
+                color:black;
+                font-weight: 500;
+                p{padding-top:10px;color:black;}
+            }
+            
+        }
+        
+    }
+}
+@media screen and (max-width: 776px){
+    .confirm_info{
+        .container{
+            .confirm_body{
+                .confirm_row{
+                    .confirm_main{
+                        width: 100%;
+                        display: grid; 
+                        grid-template-columns: 1fr; 
+                        gap: 0px 0px; 
+                    }
+                }
+            }
+        }
+    }
+    .confirm_products{
+        .inner{
+            .confirm_products_list{
+                width: 100%;
+                display: grid; 
+                grid-template-columns: 1fr; 
+                gap: 2rem; 
             }
         }
         
